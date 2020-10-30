@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>612</width>
-    <height>188</height>
+    <width>643</width>
+    <height>262</height>
    </rect>
   </property>
   <property name="autoFillBackground">
@@ -117,47 +117,9 @@
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_8">
-        <property name="spacing">
-         <number>9</number>
-        </property>
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Menge</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="DoubleSpinBox" name="tbMengeTotal">
-          <property name="minimumSize">
-           <size>
-            <width>80</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In diesem Feld gibt der Kleine Brauhelfer die &lt;span style=&quot; font-weight:600;&quot;&gt;Gesamtmenge&lt;/span&gt; für die &lt;span style=&quot; font-weight:600;&quot;&gt;Weitere Zutat &lt;/span&gt;berechnet auf die Ausschlagmenge im Rezept an. &lt;span style=&quot; font-weight:600;&quot;&gt;Ausschlagmenge&lt;/span&gt; meint hier die anfangs definierte &lt;span style=&quot; font-weight:600;&quot;&gt;Jungbiermenge&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#fc0107;&quot;&gt;Achtung:&lt;/span&gt; Wie jedes Rezept ist dies eine Kalkulation. Spätere Verluste, Abweichungen werden nicht berücksicht.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="decimals">
-           <number>2</number>
-          </property>
-          <property name="minimum">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="maximum">
-           <double>9999.000000000000000</double>
-          </property>
-          <property name="singleStep">
-           <double>1.000000000000000</double>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="lblEinheit">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="2">
+         <widget class="QLabel" name="lblExtraktEinheit">
           <property name="minimumSize">
            <size>
             <width>40</width>
@@ -165,95 +127,11 @@
            </size>
           </property>
           <property name="text">
-           <string>g</string>
+           <string>°P</string>
           </property>
          </widget>
         </item>
-        <item>
-         <widget class="DoubleSpinBox" name="tbMenge">
-          <property name="minimumSize">
-           <size>
-            <width>80</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In diesem Feld wird die Menge &lt;span style=&quot; font-weight:600;&quot;&gt;Weiterer Zutaten &lt;/span&gt;in &lt;span style=&quot; font-weight:600;&quot;&gt;Gramm pro Liter&lt;/span&gt; angegeben.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#fc0107;&quot;&gt;Achtung: &lt;/span&gt;Der Kleine Brauhelder berechnet&lt;span style=&quot; font-weight:600;&quot;/&gt;Zutaten&lt;span style=&quot; font-weight:600;&quot;&gt; allein und ausschließlich&lt;/span&gt; für die &lt;span style=&quot; font-weight:600;&quot;&gt;Gesamtmenge&lt;/span&gt; des Rezeptes. Die Gesamtmenge meint allein die definierte &lt;span style=&quot; font-weight:600;&quot;&gt;Jungbiermenge&lt;/span&gt; des Rezeptes wie im Tab Rezept am Anfang der Rezepterstellung festgelegt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="decimals">
-           <number>2</number>
-          </property>
-          <property name="minimum">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="maximum">
-           <double>9999.000000000000000</double>
-          </property>
-          <property name="singleStep">
-           <double>0.100000000000000</double>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="lblEinheitProLiter">
-          <property name="minimumSize">
-           <size>
-            <width>40</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>g/l</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btnAufbrauchen">
-          <property name="minimumSize">
-           <size>
-            <width>50</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>50</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ein Klick auf den Pfeil trägt die &lt;span style=&quot; font-weight:600;&quot;&gt;gesamte Menge&lt;/span&gt; der Zutat aus der Rohstoffliste ein.&lt;/p&gt;&lt;p&gt;Diese Funktion macht Sinn bei Restbeständen, bei größeren Mengen verständlicherweise nicht.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-          </property>
-          <property name="icon">
-           <iconset resource="../images.qrc">
-            <normaloff>:/images/uebertrag_links.svg</normaloff>:/images/uebertrag_links.svg</iconset>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="lblVorhanden">
-          <property name="text">
-           <string>Vorhanden</string>
-          </property>
-         </widget>
-        </item>
-        <item>
+        <item row="0" column="13">
          <widget class="DoubleSpinBox" name="tbVorhanden">
           <property name="minimumSize">
            <size>
@@ -281,7 +159,65 @@
           </property>
          </widget>
         </item>
-        <item>
+        <item row="0" column="5">
+         <widget class="QLabel" name="lblEinheitProLiter">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>g/l</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="DoubleSpinBox" name="tbExtrakt">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+          <property name="minimum">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>9999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Menge</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="lblEinheit">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>g</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="14">
          <widget class="QLabel" name="lblEinheit2">
           <property name="minimumSize">
            <size>
@@ -291,6 +227,112 @@
           </property>
           <property name="text">
            <string>g</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="DoubleSpinBox" name="tbMenge">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In diesem Feld wird die Menge &lt;span style=&quot; font-weight:600;&quot;&gt;Weiterer Zutaten &lt;/span&gt;in &lt;span style=&quot; font-weight:600;&quot;&gt;Gramm pro Liter&lt;/span&gt; angegeben.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#fc0107;&quot;&gt;Achtung: &lt;/span&gt;Der Kleine Brauhelder berechnet&lt;span style=&quot; font-weight:600;&quot;/&gt;Zutaten&lt;span style=&quot; font-weight:600;&quot;&gt; allein und ausschließlich&lt;/span&gt; für die &lt;span style=&quot; font-weight:600;&quot;&gt;Gesamtmenge&lt;/span&gt; des Rezeptes. Die Gesamtmenge meint allein die definierte &lt;span style=&quot; font-weight:600;&quot;&gt;Jungbiermenge&lt;/span&gt; des Rezeptes wie im Tab Rezept am Anfang der Rezepterstellung festgelegt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+          <property name="minimum">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>9999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.100000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="10">
+         <widget class="QLabel" name="lblVorhanden">
+          <property name="text">
+           <string>Vorhanden</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7">
+         <widget class="QPushButton" name="btnAufbrauchen">
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Ein Klick auf den Pfeil trägt die &lt;span style=&quot; font-weight:600;&quot;&gt;gesamte Menge&lt;/span&gt; der Zutat aus der Rohstoffliste ein.&lt;/p&gt;&lt;p&gt;Diese Funktion macht Sinn bei Restbeständen, bei größeren Mengen verständlicherweise nicht.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../images.qrc">
+            <normaloff>:/images/uebertrag_links.svg</normaloff>:/images/uebertrag_links.svg</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="DoubleSpinBox" name="tbMengeTotal">
+          <property name="minimumSize">
+           <size>
+            <width>80</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;In diesem Feld gibt der Kleine Brauhelfer die &lt;span style=&quot; font-weight:600;&quot;&gt;Gesamtmenge&lt;/span&gt; für die &lt;span style=&quot; font-weight:600;&quot;&gt;Weitere Zutat &lt;/span&gt;berechnet auf die Ausschlagmenge im Rezept an. &lt;span style=&quot; font-weight:600;&quot;&gt;Ausschlagmenge&lt;/span&gt; meint hier die anfangs definierte &lt;span style=&quot; font-weight:600;&quot;&gt;Jungbiermenge&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#fc0107;&quot;&gt;Achtung:&lt;/span&gt; Wie jedes Rezept ist dies eine Kalkulation. Spätere Verluste, Abweichungen werden nicht berücksicht.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="decimals">
+           <number>2</number>
+          </property>
+          <property name="minimum">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>9999.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>1.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="6">
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="lblExtrakt">
+          <property name="text">
+           <string>Extrakt</string>
           </property>
          </widget>
         </item>
@@ -375,14 +417,14 @@
              <number>0</number>
             </property>
             <item>
-             <widget class="QLabel" name="label_6">
+             <widget class="QLabel" name="lblKochdauer">
               <property name="text">
                <string>Kochdauer</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="SpinBox" name="tbDauerMin">
+             <widget class="SpinBox" name="tbKochdauer">
               <property name="minimumSize">
                <size>
                 <width>80</width>
@@ -401,7 +443,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_5">
+             <widget class="QLabel" name="lblKochdauerEinheit">
               <property name="minimumSize">
                <size>
                 <width>40</width>
@@ -627,11 +669,6 @@
    <header>widgets/doublespinbox.h</header>
   </customwidget>
   <customwidget>
-   <class>DateEdit</class>
-   <extends>QDateEdit</extends>
-   <header>widgets/dateedit.h</header>
-  </customwidget>
-  <customwidget>
    <class>SpinBox</class>
    <extends>QSpinBox</extends>
    <header>widgets/spinbox.h</header>
@@ -641,13 +678,15 @@
    <extends>QComboBox</extends>
    <header>widgets/combobox.h</header>
   </customwidget>
+  <customwidget>
+   <class>DateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>widgets/dateedit.h</header>
+  </customwidget>
  </customwidgets>
  <tabstops>
   <tabstop>btnLoeschen</tabstop>
-  <tabstop>tbMenge</tabstop>
-  <tabstop>tbVorhanden</tabstop>
   <tabstop>cbZugabezeitpunkt</tabstop>
-  <tabstop>tbDauerMin</tabstop>
   <tabstop>tbZugabeNach</tabstop>
   <tabstop>tbDatumVon</tabstop>
   <tabstop>cbEntnahme</tabstop>
